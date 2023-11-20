@@ -1,0 +1,248 @@
+
+:root {
+    --theme-primary: teal;
+    --unum-blue-4: #004470;
+  }
+* {
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    line-height: 1.5;
+}
+.search-row{
+    background-color: black;
+    display: flex;
+    padding: 1rem;
+    color: lightgray;
+    align-items: center;
+}
+.search-row svg{
+    margin-right: 2rem;
+}
+.search-row-company-name{
+    font-size: 1.3rem;
+    margin-right: 20rem;
+}
+.search{
+    background-color: #202020;
+    border: 1px black solid;
+    padding: .5rem 2rem;
+    border-radius: 3px;
+    color: rgba(255,255,255, .5);
+    font-size: 1rem;
+}
+.search::placeholder{
+    color: rgba(255,255,255, .5);
+}
+.header{
+    display: flex;
+    padding: 1.25rem 2rem;
+    gap: 1rem;
+}
+.logo{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: var(--theme-primary);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.company-name-area{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav{
+    padding-top: .5rem;
+}
+.navlink{
+    color: black;
+    text-decoration: none;
+}
+.navlink--active{
+    font-weight: bold;
+    border-bottom: 3px var(--theme-primary) solid;
+}
+.hero{
+    height: 300px;
+    background-color: var(--theme-primary);
+    padding: 1rem;
+    background-image: url('./workspace5a.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-tint {
+    background-color: rgba(0,128,128,.85);
+    background-blend-mode: multiply;
+  }
+.hero-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.herogrid{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+}
+.herogrid-level-1{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.herogrid-level-2{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    max-width: 100%;
+    object-fit: contain;
+}
+.hero-p{
+    color: white;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+.hero-btn{
+    padding: .7rem 1.6rem;
+    color: var(--theme-primary);
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+.nav ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+.nav ol li{
+    font-size: 1.1rem;
+}
+.main {
+    background-color: lightgray;
+    padding: 1rem;
+}
+.main-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 15px;
+    padding-top: 2rem;
+}
+@media (width > 600px){
+    .main-inner{
+        display: flex;
+    }
+}
+.main-col{
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 10px 9px 6px -5px rgba(0,0,0,0.75);
+}
+.main-col h2{
+    display: inline-block;
+    border-bottom: 3px solid var(--theme-primary);
+}
+.event-card{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.event-card--last{
+    margin-bottom: 0;
+}
+.event-card-date{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: var(--theme-primary);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .5rem;
+}
+.event-card-month{
+    font-size: .9rem;
+}
+.event-card-day{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.event-card-heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.event-card-datetime{
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+.event-card-btn{
+    border-radius: 30px;
+    background-color:blue;
+    border:none;
+    color:white;
+    padding: .2rem 1rem;
+}
+.quick-link-row{
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+.quick-link{
+    flex: 1;
+}
+.quick-link-top{
+    height: 70px;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--theme-primary);
+    font-size: 2rem;
+}
+.quick-link-bottom{
+    background-color: var(--theme-primary);
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    color: white;
+    text-align: center;
+}
+.quick-link-bottom--unum{
+    background-color: var(--unum-blue-4);
+}
+.leave-logic-image{
+    max-width: 200px;
+}
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px var(--theme-primary) solid;
+}
+.centerme{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.profile-pic {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+.chairman-name{
+    font-size: 1.7rem;
+    text-align: center;
+}
